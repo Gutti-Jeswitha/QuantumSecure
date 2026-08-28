@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuantumSecure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <h2>⚛ QuantumSecure</h2>
+
+        <p>QDS Security Framework</p>
+
+        <button onclick="showSection('dashboard')">
+            🏠 Dashboard
+        </button>
+
+        <button onclick="showSection('verification')">
+            🔐 Signature Verification
+        </button>
+
+        <button onclick="showSection('threats')">
+            🚨 Threat Detection
+        </button>
+
+        <button onclick="showSection('simulation')">
+            🧪 Attack Simulation
+        </button>
+
+        <button onclick="showSection('analysis')">
+            📊 Security Analysis
+        </button>
+
+        <button onclick="showSection('logs')">
+            📋 Security Logs
+        </button>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <header>
+
+            <div>
+                <h1>Quantum-Inspired Cyber Threat Detection</h1>
+                <p>Digital Signature Security Monitoring System</p>
+            </div>
+
+            <div class="secure">
+                🟢 SYSTEM SECURE
+            </div>
+
+        </header>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section id="dashboard" class="section active">
+
+    <div class="welcome">
+        <div>
+            <h2>Security Dashboard</h2>
+            <p>
+                Monitor Quantum Digital Signature integrity,
+                authenticity and cyber threats.
+            </p>
+        </div>
+
+        <div class="live">
+            ● LIVE MONITORING
+        </div>
+    </div>
+
+
+    <!-- Statistics -->
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-icon">🔐</div>
+            <p>Signatures Checked</p>
+            <h3>1,284</h3>
+            <small>↑ 12% this session</small>
+        </div>
+
+
+        <div class="card">
+            <div class="card-icon">✓</div>
+            <p>Valid Signatures</p>
+            <h3>1,267</h3>
+            <small>98.7% verification rate</small>
+        </div>
+
+
+        <div class="card threat-card-stat">
+            <div class="card-icon">⚠</div>
+            <p>Threats Detected</p>
+            <h3>17</h3>
+            <small>Requires attention</small>
+        </div>
+
+
+        <div class="card">
+            <div class="card-icon">🛡</div>
+            <p>Security Score</p>
+            <h3>94.2%</h3>
+            <small>System protection level</small>
+        </div>
+
+    </div>
+
+
+    <!-- Security Engine -->
+
+    <div class="panel">
+
+        <h3>⚛ Quantum-Inspired Security Engine</h3>
+
+        <p class="panel-description">
+            Real-time monitoring of signature verification
+            and threat detection components.
+        </p>
+
+
+        <div class="engine-grid">
+
+            <div class="engine-item">
+                <span>Pauli Eigenstate Analysis</span>
+                <b>● ACTIVE</b>
+            </div>
+
+            <div class="engine-item">
+                <span>Projective Measurement</span>
+                <b>● ACTIVE</b>
+            </div>
+
+            <div class="engine-item">
+                <span>Statistical Threshold</span>
+                <b>● ACTIVE</b>
+            </div>
+
+            <div class="engine-item">
+                <span>Threat Monitoring</span>
+                <b>● ACTIVE</b>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Recent Activity -->
+
+    <div class="panel">
+
+        <div class="panel-title">
+
+            <h3>Recent Security Activity</h3>
+
+            <span>Last 30 minutes</span>
+
+        </div>
+
+
+        <div class="activity green">
+
+            🟢
+            <div>
+                <strong>Signature Verified</strong>
+                <p>Signature DS-001 successfully verified.</p>
+            </div>
+
+            <span>2 min ago</span>
+
+        </div>
+
+
+        <div class="activity red">
+
+            🔴
+            <div>
+                <strong>Forgery Attempt</strong>
+                <p>Possible signature forgery detected.</p>
+            </div>
+
+            <span>5 min ago</span>
+
+        </div>
+
+
+        <div class="activity yellow">
+
+            🟠
+            <div>
+                <strong>Replay Attack</strong>
+                <p>Previously used signature detected.</p>
+            </div>
+
+            <span>8 min ago</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- ================= VERIFICATION ================= -->
+
+      <section id="verification" class="section">
+
+    <div class="page-heading">
+        <div>
+            <h2>🔐 Digital Signature Verification</h2>
+            <p>
+                Verify the integrity and authenticity of a Quantum Digital Signature.
+            </p>
+        </div>
+
+        <span class="protocol-badge">
+            QDS PROTOCOL
+        </span>
+    </div>
+
+
+    <div class="verification-layout">
+
+        <!-- INPUT PANEL -->
+
+        <div class="panel form-panel">
+
+            <h3>Signature Details</h3>
+
+            <p class="panel-description">
+                Enter the signature information to begin verification.
+            </p>
+
+
+            <label>Signature ID</label>
+
+            <input
+                type="text"
+                id="signatureId"
+                placeholder="Example: QDS-2026-001">
+
+
+            <label>Message / Document</label>
+
+            <textarea
+                id="message"
+                placeholder="Enter the message or document associated with the signature">
+            </textarea>
+
+
+            <label>Verification Protocol</label>
+
+            <select id="method">
+
+                <option>
+                    Quantum-Inspired QDS
+                </option>
+
+                <option>
+                    Standard Digital Signature
+                </option>
+
+            </select>
+
+
+            <button
+                class="primary verify-btn"
+                onclick="verifySignature()">
+
+                🔍 VERIFY SIGNATURE
+
+            </button>
+
+        </div>
+
+
+        <!-- RESULT PANEL -->
+
+        <div class="panel verification-result-panel">
+
+            <h3>Verification Result</h3>
+
+            <div id="verificationResult">
+
+                <div class="waiting">
+
+                    <div class="waiting-icon">
+                        🔐
+                    </div>
+
+                    <h3>Waiting for verification</h3>
+
+                    <p>
+                        Enter a Signature ID and click
+                        "Verify Signature".
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SECURITY METRICS -->
+
+    <div class="cards verification-metrics">
+
+        <div class="card">
+            <p>Forgery Probability</p>
+            <h3 id="forgeryProbability">—</h3>
+        </div>
+
+        <div class="card">
+            <p>Verification Accuracy</p>
+            <h3 id="verificationAccuracy">—</h3>
+        </div>
+
+        <div class="card">
+            <p>Acceptance Threshold</p>
+            <h3>5.0%</h3>
+        </div>
+
+        <div class="card">
+            <p>Decision</p>
+            <h3 id="decision">—</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- ================= THREATS ================= -->
+
+     <section id="threats" class="section">
+
+    <div class="page-heading">
+
+        <div>
+            <h2>🚨 Threat Detection Center</h2>
+
+            <p>
+                Monitor and identify security threats affecting
+                Quantum Digital Signatures.
+            </p>
+        </div>
+
+        <span class="protocol-badge">
+            REAL-TIME MONITORING
+        </span>
+
+    </div>
+
+
+    <!-- THREAT OVERVIEW -->
+
+    <div class="cards">
+
+        <div class="card">
+            <p>Total Threats</p>
+            <h3 class="red">17</h3>
+            <small>Detected this session</small>
+        </div>
+
+        <div class="card">
+            <p>Critical Threats</p>
+            <h3 class="red">3</h3>
+            <small>Requires investigation</small>
+        </div>
+
+        <div class="card">
+            <p>Blocked Attempts</p>
+            <h3>14</h3>
+            <small>Automatically blocked</small>
+        </div>
+
+        <div class="card">
+            <p>Detection Rate</p>
+            <h3>96%</h3>
+            <small>Current performance</small>
+        </div>
+
+    </div>
+
+
+    <!-- THREAT TYPES -->
+
+    <h3 class="sub-heading">
+        Detected Threat Categories
+    </h3>
+
+
+    <div class="threat-grid">
+
+
+        <!-- FORGERY -->
+
+        <div class="threat-card">
+
+            <div class="threat-header">
+
+                <div class="threat-icon">
+                    🔐
+                </div>
+
+                <span class="status danger">
+                    5 DETECTED
+                </span>
+
+            </div>
+
+            <h3>Signature Forgery</h3>
+
+            <p>
+                Detects attempts to generate or modify
+                unauthorized digital signatures.
+            </p>
+
+            <div class="threat-footer">
+
+                <span>Risk Level</span>
+
+                <b class="red">HIGH</b>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMPERSONATION -->
+
+        <div class="threat-card">
+
+            <div class="threat-header">
+
+                <div class="threat-icon">
+                    👤
+                </div>
+
+                <span class="status danger">
+                    3 DETECTED
+                </span>
+
+            </div>
+
+            <h3>Impersonation</h3>
+
+            <p>
+                Detects unauthorized users attempting
+                to verify signatures as another identity.
+            </p>
+
+            <div class="threat-footer">
+
+                <span>Risk Level</span>
+
+                <b class="red">HIGH</b>
+
+            </div>
+
+        </div>
+
+
+        <!-- REPLAY -->
+
+        <div class="threat-card">
+
+            <div class="threat-header">
+
+                <div class="threat-icon">
+                    🔄
+                </div>
+
+                <span class="status danger">
+                    6 DETECTED
+                </span>
+
+            </div>
+
+            <h3>Replay Attack</h3>
+
+            <p>
+                Detects previously valid signatures being
+                reused in unauthorized verification attempts.
+            </p>
+
+            <div class="threat-footer">
+
+                <span>Risk Level</span>
+
+                <b class="red">CRITICAL</b>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUANTUM CHANNEL -->
+
+        <div class="threat-card">
+
+            <div class="threat-header">
+
+                <div class="threat-icon">
+                    ⚛
+                </div>
+
+                <span class="status safe">
+                    MONITORING
+                </span>
+
+            </div>
+
+            <h3>Quantum Channel Manipulation</h3>
+
+            <p>
+                Monitors possible interference or
+                manipulation of quantum communication.
+            </p>
+
+            <div class="threat-footer">
+
+                <span>Risk Level</span>
+
+                <b class="green">LOW</b>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ALERT PANEL -->
+
+    <div class="panel alert-panel">
+
+        <h3>⚠ Latest Security Alert</h3>
+
+        <p>
+            Replay attack pattern detected during signature
+            verification. The verification request has been
+            flagged for statistical analysis.
+        </p>
+
+        <span class="alert-time">
+            Detected 2 minutes ago
+        </span>
+
+    </div>
+
+</section>
+
+        <!-- ================= SIMULATION ================= -->
+
+<section id="simulation" class="section">
+
+    <div class="page-heading">
+
+        <div>
+            <h2>🧪 Attack Simulation</h2>
+
+            <p>
+                Simulate cyber attacks against the
+                Quantum Digital Signature verification system.
+            </p>
+        </div>
+
+        <span class="protocol-badge">
+            SIMULATION MODE
+        </span>
+
+    </div>
+
+
+    <div class="simulation-layout">
+
+
+        <!-- CONTROL PANEL -->
+
+        <div class="panel form-panel">
+
+            <h3>Simulation Parameters</h3>
+
+            <p class="panel-description">
+                Select an attack type and configure the
+                number of test attempts.
+            </p>
+
+
+            <label>Attack Type</label>
+
+            <select id="attackType">
+
+                <option value="Forgery">
+                    Signature Forgery
+                </option>
+
+                <option value="Impersonation">
+                    Impersonation
+                </option>
+
+                <option value="Replay Attack">
+                    Replay Attack
+                </option>
+
+                <option value="Quantum Channel Manipulation">
+                    Quantum Channel Manipulation
+                </option>
+
+            </select>
+
+
+            <label>Number of Test Attempts</label>
+
+            <input
+                type="number"
+                id="testCount"
+                value="100"
+                min="10"
+                max="10000">
+
+
+            <button
+                class="primary"
+                onclick="runSimulation()">
+
+                ▶ RUN SIMULATION
+
+            </button>
+
+        </div>
+
+
+        <!-- RESULT PANEL -->
+
+        <div class="panel simulation-result-panel">
+
+            <h3>Simulation Result</h3>
+
+            <div id="simulationResult">
+
+                <div class="waiting">
+
+                    <div class="waiting-icon">
+                        🧪
+                    </div>
+
+                    <h3>No simulation running</h3>
+
+                    <p>
+                        Configure the attack parameters
+                        and start a simulation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SIMULATION METRICS -->
+
+    <div class="cards simulation-metrics">
+
+        <div class="card">
+
+            <p>Tests Performed</p>
+
+            <h3 id="testsPerformed">—</h3>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>Threats Detected</p>
+
+            <h3 class="red" id="threatsDetected">—</h3>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>Detection Rate</p>
+
+            <h3 id="detectionRate">—</h3>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>Risk Level</p>
+
+            <h3 id="riskLevel">—</h3>
+
+        </div>
+
+    </div>
+
+
+    <!-- EXPLANATION -->
+
+    <div class="panel">
+
+        <h3>How the Simulation Works</h3>
+
+        <div class="simulation-flow">
+
+            <div>Attack Input</div>
+
+            <span>→</span>
+
+            <div>Signature Verification</div>
+
+            <span>→</span>
+
+            <div>Measurement Analysis</div>
+
+            <span>→</span>
+
+            <div>Statistical Decision</div>
+
+            <span>→</span>
+
+            <div>Threat Detection</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ================= ANALYSIS ================= -->
+
+       <section id="analysis" class="section">
+
+    <div class="page-heading">
+
+        <div>
+            <h2>📊 Security Analysis</h2>
+
+            <p>
+                Statistical analysis of quantum-inspired
+                signature verification results.
+            </p>
+        </div>
+
+        <span class="protocol-badge">
+            ANALYSIS ENGINE
+        </span>
+
+    </div>
+
+
+    <!-- KEY METRICS -->
+
+    <div class="cards">
+
+        <div class="card">
+            <p>Verification Accuracy</p>
+            <h3>98.7%</h3>
+            <small>Overall accuracy</small>
+        </div>
+
+        <div class="card">
+            <p>Forgery Probability</p>
+            <h3>0.3%</h3>
+            <small>Estimated probability</small>
+        </div>
+
+        <div class="card">
+            <p>Acceptance Threshold</p>
+            <h3>5.0%</h3>
+            <small>Decision threshold</small>
+        </div>
+
+        <div class="card">
+            <p>Threat Detection Rate</p>
+            <h3>96.0%</h3>
+            <small>Current detection rate</small>
+        </div>
+
+    </div>
+
+
+    <!-- MEASUREMENT ANALYSIS -->
+
+    <div class="panel">
+
+        <h3>⚛ Pauli Measurement Analysis</h3>
+
+        <p class="panel-description">
+            Quantum-inspired measurement outcomes used
+            for signature verification analysis.
+        </p>
+
+
+        <div class="measurement-row">
+
+            <div class="measurement-name">
+                <strong>Pauli X</strong>
+                <span>Bit-flip basis</span>
+            </div>
+
+            <div class="measurement-bar">
+
+                <div style="width: 96%;"></div>
+
+            </div>
+
+            <strong>96%</strong>
+
+        </div>
+
+
+        <div class="measurement-row">
+
+            <div class="measurement-name">
+                <strong>Pauli Y</strong>
+                <span>Phase and bit basis</span>
+            </div>
+
+            <div class="measurement-bar">
+
+                <div style="width: 94%;"></div>
+
+            </div>
+
+            <strong>94%</strong>
+
+        </div>
+
+
+        <div class="measurement-row">
+
+            <div class="measurement-name">
+                <strong>Pauli Z</strong>
+                <span>Computational basis</span>
+            </div>
+
+            <div class="measurement-bar">
+
+                <div style="width: 97%;"></div>
+
+            </div>
+
+            <strong>97%</strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- DECISION LOGIC -->
+
+    <div class="analysis-grid">
+
+        <div class="panel">
+
+            <h3>📐 Statistical Decision Rule</h3>
+
+            <div class="formula">
+
+                Forgery Probability
+
+                <span>&lt;</span>
+
+                Acceptance Threshold
+
+                <span>→</span>
+
+                <b>ACCEPT</b>
+
+            </div>
+
+
+            <p class="analysis-text">
+
+                The verification result is evaluated against
+                a predefined statistical threshold to determine
+                whether the signature should be accepted or flagged.
+
+            </p>
+
+        </div>
+
+
+        <div class="panel">
+
+            <h3>🛡 Current Security Decision</h3>
+
+            <div class="decision-box">
+
+                <div class="decision-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h2>ACCEPTED</h2>
+
+                    <p>
+                        Forgery probability is below
+                        the configured threshold.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SECURITY PIPELINE -->
+
+    <div class="panel">
+
+        <h3>Security Analysis Pipeline</h3>
+
+        <div class="analysis-flow">
+
+            <div class="flow-step">
+                <span>1</span>
+                Measurement
+            </div>
+
+            <span>→</span>
+
+            <div class="flow-step">
+                <span>2</span>
+                Statistical Analysis
+            </div>
+
+            <span>→</span>
+
+            <div class="flow-step">
+                <span>3</span>
+                Probability Estimation
+            </div>
+
+            <span>→</span>
+
+            <div class="flow-step">
+                <span>4</span>
+                Threshold Decision
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ================= LOGS ================= -->
+
+      <section id="logs" class="section">
+
+    <div class="page-heading">
+
+        <div>
+            <h2>📋 Security Logs</h2>
+
+            <p>
+                Record of signature verification and
+                detected security events.
+            </p>
+        </div>
+
+        <span class="protocol-badge">
+            EVENT MONITOR
+        </span>
+
+    </div>
+
+
+    <!-- LOG SUMMARY -->
+
+    <div class="cards">
+
+        <div class="card">
+            <p>Total Events</p>
+            <h3>128</h3>
+            <small>Current session</small>
+        </div>
+
+        <div class="card">
+            <p>Successful</p>
+            <h3>109</h3>
+            <small>Verified events</small>
+        </div>
+
+        <div class="card">
+            <p>Threats</p>
+            <h3 class="red">17</h3>
+            <small>Security alerts</small>
+        </div>
+
+        <div class="card">
+            <p>Blocked</p>
+            <h3>14</h3>
+            <small>Prevented attempts</small>
+        </div>
+
+    </div>
+
+
+    <!-- LOG TABLE -->
+
+    <div class="panel">
+
+        <div class="panel-title">
+
+            <h3>Recent Security Events</h3>
+
+            <span>Live session</span>
+
+        </div>
+
+
+        <div class="log-table">
+
+            <div class="log-header">
+
+                <span>TIME</span>
+                <span>EVENT</span>
+                <span>TYPE</span>
+                <span>STATUS</span>
+
+            </div>
+
+
+            <div class="log-row">
+
+                <span>12:42:10</span>
+
+                <span>
+                    Signature DS-001 verified
+                </span>
+
+                <span>Verification</span>
+
+                <b class="log-success">
+                    SUCCESS
+                </b>
+
+            </div>
+
+
+            <div class="log-row">
+
+                <span>12:44:32</span>
+
+                <span>
+                    Possible signature forgery
+                </span>
+
+                <span>Threat</span>
+
+                <b class="log-danger">
+                    BLOCKED
+                </b>
+
+            </div>
+
+
+            <div class="log-row">
+
+                <span>12:46:18</span>
+
+                <span>
+                    Replay attack detected
+                </span>
+
+                <span>Threat</span>
+
+                <b class="log-danger">
+                    BLOCKED
+                </b>
+
+            </div>
+
+
+            <div class="log-row">
+
+                <span>12:48:05</span>
+
+                <span>
+                    Signature DS-002 verified
+                </span>
+
+                <span>Verification</span>
+
+                <b class="log-success">
+                    SUCCESS
+                </b>
+
+            </div>
+
+
+            <div class="log-row">
+
+                <span>12:51:27</span>
+
+                <span>
+                    Unauthorized verification attempt
+                </span>
+
+                <span>Impersonation</span>
+
+                <b class="log-warning">
+                    FLAGGED
+                </b>
+
+            </div>
+
+
+            <div class="log-row">
+
+                <span>12:54:41</span>
+
+                <span>
+                    Quantum channel monitoring check
+                </span>
+
+                <span>Channel</span>
+
+                <b class="log-success">
+                    NORMAL
+                </b>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- LOG EXPLANATION -->
+
+    <div class="panel">
+
+        <h3>🔎 Event Classification</h3>
+
+        <div class="classification-grid">
+
+            <div>
+                <b class="log-success">SUCCESS</b>
+                <p>Legitimate signature verification.</p>
+            </div>
+
+            <div>
+                <b class="log-danger">BLOCKED</b>
+                <p>Detected malicious activity.</p>
+            </div>
+
+            <div>
+                <b class="log-warning">FLAGGED</b>
+                <p>Event requires further analysis.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
